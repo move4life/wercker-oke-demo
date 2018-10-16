@@ -5,18 +5,18 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: get-ip
+  name: get-ip-2
   labels:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: get-ip
+      app: get-ip-2
   template:
     metadata:
       labels:
-        app: get-ip
+        app: get-ip-2
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
